@@ -1,0 +1,88 @@
+* {
+  padding: 0px 0px;
+  margin: 0px 0px;
+  font-family: Segoe UI;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #17cf97;
+}
+
+li {
+  list-style: none;
+  position: relative;
+  padding: 0 20px;
+  
+
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: rgb(5, 27, 20);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  transition: 0.2s all ease-in-out;
+}
+
+.fa-bars,
+.fa-xmark {
+  color: #17cf97;
+  font-size: 20px;
+  display: none;
+
+}
+.mobile{
+  display: none;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (max-width:720px) {
+  .navbar {
+    /* display: none; */
+    position: absolute;
+    display: flex;
+    flex-direction:column;
+    background-color: rgb(11, 13, 12);
+    width: 300px;
+    height: 100vh;
+    top: 90px;
+    padding: 40px;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .mobile{
+    display: block;
+  }
+  
+  .fa-bars,
+  .fa-xmark {
+    font-size: 30px;
+    display: block;
+
+  }
+
+  li{
+    width: 100%;
+  }
+  .active{
+    right: 0;
+  }
+  .notactive{
+    right: -300px;
+  }
+
+  
+}
